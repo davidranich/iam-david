@@ -26,6 +26,15 @@ tippy('#light-dark', {
      allowHTML: true,
      delay: [300, 50],
      offset: [0, 4],
+     placement: 'right-end',
+     animation: 'shift-away'
+});
+
+tippy('#about-button', {
+     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">about me</span>',
+     allowHTML: true,
+     delay: [300, 50],
+     offset: [0, 4],
      placement: 'left-end',
      animation: 'shift-away'
 });
