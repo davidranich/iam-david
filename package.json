@@ -16,10 +16,16 @@
   "author": "david ranich",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "concurrently": "^7.2.0",
     "express": "^4.18.1",
     "puppeteer": "^14.1.0",
     "tippy.js": "^6.3.7"
+=======
+    "@popperjs/core": "^2.11.5",
+    "express": "^4.18.1",
+    "concurrently": "^7.2.0"
+>>>>>>> 3f417600f484f2046cb9f3061ada56ba9747db5c
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
