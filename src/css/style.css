@@ -9,14 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;900&display=swap');
 
 /* terminal */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
      BG Pattern
      ================
 
+     Light:
+
      Foreground: #475569
      Background: #e5e5e5
+
+     Dark:
+
+     Foreground: #xxx
+     Background: #xxx
 */
 
 .lightmode-bg {
@@ -61,52 +68,189 @@ a {
      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
-@keyframes ping {
+@-webkit-keyframes ping {
      75%, 100% {
-          transform: scale(2);
-          opacity: 0;
+       transform: scale(2);
+       opacity: 0;
+     }
+   }
+   
+   @keyframes ping {
+     75%, 100% {
+       transform: scale(2);
+       opacity: 0;
+     }
+   }
+
+.terminal {
+     font-family: 'Source Code Pro', monospace;
+}
+
+/* ============ */
+/* Tippy.js */
+/* ============ */
+
+@media (min-width: 680px) { 
+     .tippy-box[data-animation=fade][data-state=hidden] {
+          opacity: 0t
+     }
+
+     [data-tippy-root] {
+          max-width: calc(100vw - 10px)
+     }
+
+     .tippy-box {
+          position: relative;
+          background-color: #333;
+          color: #fff;
+          border-radius: 4px;
+          font-size: 14px;
+          line-height: 1.4;
+          white-space: normal;
+          outline: 0;
+          transition-property: transform, visibility, opacity
+     }
+
+     .tippy-box[data-placement^=top]>.tippy-arrow {
+          bottom: 0
+     }
+
+     .tippy-box[data-placement^=top]>.tippy-arrow:before {
+          bottom: -7px;
+          left: 0;
+          border-width: 8px 8px 0;
+          border-top-color: initial;
+          transform-origin: center top
+     }
+
+     .tippy-box[data-placement^=bottom]>.tippy-arrow {
+          top: 0
+     }
+
+     .tippy-box[data-placement^=bottom]>.tippy-arrow:before {
+          top: -7px;
+          left: 0;
+          border-width: 0 8px 8px;
+          border-bottom-color: initial;
+          transform-origin: center bottom
+     }
+
+     .tippy-box[data-placement^=left]>.tippy-arrow {
+          right: 0
+     }
+
+     .tippy-box[data-placement^=left]>.tippy-arrow:before {
+          border-width: 8px 0 8px 8px;
+          border-left-color: initial;
+          right: -7px;
+          transform-origin: center left
+     }
+
+     .tippy-box[data-placement^=right]>.tippy-arrow {
+          left: 0
+     }
+
+     .tippy-box[data-placement^=right]>.tippy-arrow:before {
+          left: -7px;
+          border-width: 8px 8px 8px 0;
+          border-right-color: initial;
+          transform-origin: center right
+     }
+
+     .tippy-box[data-inertia][data-state=visible] {
+          transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
+     }
+
+     .tippy-arrow {
+          width: 16px;
+          height: 16px;
+          color: #333
+     }
+
+     .tippy-arrow:before {
+          content: "";
+          position: absolute;
+          border-color: transparent;
+          border-style: solid
+     }
+
+     .tippy-content {
+          position: relative;
+          padding: 5px 9px;
+          z-index: 1
+     }
+
+
+     .tippy-box[data-placement^=top]>.tippy-svg-arrow {
+          bottom: 0
+     }
+
+     .tippy-box[data-placement^=top]>.tippy-svg-arrow:after,
+     .tippy-box[data-placement^=top]>.tippy-svg-arrow>svg {
+          top: 16px;
+          transform: rotate(180deg)
+     }
+
+     .tippy-box[data-placement^=bottom]>.tippy-svg-arrow {
+          top: 0
+     }
+
+     .tippy-box[data-placement^=bottom]>.tippy-svg-arrow>svg {
+          bottom: 16px
+     }
+
+     .tippy-box[data-placement^=left]>.tippy-svg-arrow {
+          right: 0
+     }
+
+     .tippy-box[data-placement^=left]>.tippy-svg-arrow:after,
+     .tippy-box[data-placement^=left]>.tippy-svg-arrow>svg {
+          transform: rotate(90deg);
+          top: calc(50% - 3px);
+          left: 11px
+     }
+
+     .tippy-box[data-placement^=right]>.tippy-svg-arrow {
+          left: 0
+     }
+
+     .tippy-box[data-placement^=right]>.tippy-svg-arrow:after,
+     .tippy-box[data-placement^=right]>.tippy-svg-arrow>svg {
+          transform: rotate(-90deg);
+          top: calc(50% - 3px);
+          right: 11px
+     }
+
+     .tippy-svg-arrow {
+          width: 16px;
+          height: 16px;
+          fill: #333;
+          text-align: initial
+     }
+
+     .tippy-svg-arrow,
+     .tippy-svg-arrow>svg {
+          position: absolute
+     }
+
+     .tippy-box[data-animation=shift-away][data-state=hidden] {
+          opacity: 0
+     }
+
+     .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=top] {
+          transform: translateY(10px)
+     }
+
+     .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=bottom] {
+          transform: translateY(-10px)
+     }
+
+     .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=left] {
+          transform: translateX(10px)
+     }
+
+     .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=right] {
+          transform: translateX(-10px)
      }
 }
-
-#window-code {
-     font-family: 'Ubuntu Mono', monospace; 
-     font-weight: 400;
-}
-
-.tooltip {
-     position: relative;
-     display: inline-block;
-}
-
-.tooltip .tooltiptext {
-     visibility: hidden;
-     wixdth: 120px;
-     bacxkground-color: #555;
-     color: #fff;
-     text-align: center;
-     border-radius: 0.375rem;
-     padding: 5px 0;
-     position: absolute;
-     z-index: 1;
-     bottom: 125%;
-     left: 50%;
-     margin-left: -60px;
-     opacity: 0;
-     transition: opacity 0.3s;
-}
-
-/* .tooltip .tooltiptext::after {
-     content: "";
-     position: absolute;
-     top: 100%;
-     left: 50%;
-     margin-left: -5px;
-     border-width: 5px;
-     border-style: solid;
-     border-coxlor: #555 transparent transparent transparent;
-} */
-
-.tooltip:hover .tooltiptext {
-     visibility: visible;
-     opacity: 1;
-}
+/* ============ */
