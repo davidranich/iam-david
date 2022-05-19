@@ -19,7 +19,7 @@ const fs = require('fs');
           "price": html
      };
 
-     fs.writeFile('./src/lib/eth-price.json', JSON.stringify(content), err => {
+     fs.writeFile('./src/lib/files/eth-price.json', JSON.stringify(content), err => {
           if (err) {
                console.error(err);
           }
