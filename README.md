@@ -1,15 +1,8 @@
-# 🚀 Welcome to your new awesome project!
+# iam-david code!
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
+Here you find the latest code for my personal website: https://iam.davidranich.com. Use the following commands below if you wish.
 
 ```
-yarn build
+npm install
+npm run devwatch
 ```
-
-to bundle your application
