@@ -21,7 +21,7 @@ tippy('#favorite', {
      animation: 'shift-away'
 });
 
-tippy('#light-dark', {
+tippy('#light-dark-mode', {
      content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">dark/light</span>',
      allowHTML: true,
      delay: [300, 50],

@@ -4,8 +4,8 @@
   "description": "my personal website",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon ./server.js localhost 8080",
-    "devwatch": "concurrently \"nodemon ./server.js localhost 8080\" \"webpack --watch\"",
+    "dev": "nodemon ./server.js localhost 3000",
+    "devwatch": "concurrently \"nodemon ./server.js localhost 3000\" \"webpack --watch\"",
     "start": "node server.js",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
