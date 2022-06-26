@@ -6,7 +6,7 @@ here is the code for [my website](https://iam.davidranich.com). it's not much, b
 
 - ethereum price scraping script
 - easter eggs
-- other goodies that i can't think of 
+- flappy dave game ([Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird) clone)
 
 As [Gandhi] once said:
 
@@ -14,11 +14,14 @@ As [Gandhi] once said:
 
 ## Tech Stack
 
-- es5/es6 javascript
 - [tailwindcss](https://tailwindcss.com/)
+- [express](https://expressjs.com/)
 - [puppeteer](https://pptr.dev/)
 - [webpack](https://webpack.js.org/)
-- node.js
+- [babel](https://babeljs.io/)
+- [font awesome](https://fontawesome.com/)
+- [phaser](https://phaser.io/)
+- [node.js](https://nodejs.org/en/)
 
 ## Installation
 

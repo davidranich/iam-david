@@ -1,17 +1,17 @@
 {
   "name": "iam-david",
-  "version": "1.0.0",
+  "version": "0.0.165",
   "description": "my personal website",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon ./server.js localhost 3000",
-    "devwatch": "concurrently \"nodemon ./server.js localhost 3000\" \"webpack --watch\"",
+    "devwatch": "concurrently \"nodemon ./server.js localhost 3000\" \"webpack --watch\" \"npx tailwindcss -i ./src/css/style.css -o ./public/css/main.css --watch\"",
     "start": "node server.js",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "eth": "node ./src/lib/eth-price-scrape.js"
+    "gendata": "node ./src/lib/eth-price-scrape.js"
   },
   "author": "david ranich",
   "license": "ISC",

@@ -6,20 +6,18 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>David Ranich | Personal</title>
      <script src="../js/tailwind.js"></script>
-     <link rel="stylesheet" href="../css/style.css">
-     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css?ver=20">
+     <link rel="stylesheet" type="text/css" href="../css/main.css">
      <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
      <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
      <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
      <link rel="manifest" href="../favicon/site.webmanifest">
 </head>
-
 <body>
-     <main id="heres-the-goods" class="pb-8 lg:pb-0">
+     <main id="heres-the-goods" class="pbx-8 lg:pbx-0">
 
           <!-- Card -->
-          <div id="main-card" class="flex flex-col-reverse lg:flex-row justify-between w-10/12 lg:w-8/12 md:max-w-sm lg:max-w-4xl px-4 py-4 mx-auto mt-10 lg:mt-16 bg-gray-100 dark:bg-neutral-800 shadow-sm rounded-md">
-               <div id="david-info-side" class="my-6 lg:pl-4 pt-2 lg:pt-0">
+          <div id="main-card" class="flex flex-col-reverse lg:flex-row justify-between lg:w-8/12 2xl:w-full md:max-w-sm lg:max-w-4xl px-8 py-8 mx-auto mt-10 lg:mt-16 bg-gray-100 dark:bg-neutral-800 shadow-sm rounded-md 2xl:mt-52">
+               <div id="david-info-side" class="my-6 lg:plx-4 ptx-2 lg:ptx-0">
 
                     <!-- Title -->
                     <a href="/"><span id="title" class="text-slate-700 font-bold text-5xl lg:text-7xl md:text-5xl drop-shadow-md transxition duxration-600 eaxse-in-out hover:text-slate-500">David Ranich</span></a>
@@ -44,7 +42,7 @@
                          
                          <a id="projects-button"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;projects</button></a>
 
-                         <a id="resume-button" href="../misc/David-Resume-2022-1.pdf" target="_blank"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fas fa-file-user"></i>&nbsp;&nbsp;resume</button></a>
+                         <a id="resume-button" href="../misc/Resume-David-Ranich.pdf" target="_blank"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fas fa-file-user"></i>&nbsp;&nbsp;resume</button></a>
 
                          <a id="linkedin-button" href="https://www.linkedin.com/in/david-ranich/" target="_blank"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;connect</button></a>
                     </div>
@@ -52,12 +50,13 @@
                     <!-- Copyright Section -->
                     <div id="copyright" class="flex flex-col py-1 gap-x-3 justify-center items-center">
                          <!-- Darkmode / Lightmode -->
-                         <i id="light-dark-mode" class="fad fa-sun fxxa-md text-yellow-500 cursor-pointer hover:text-slate-600 pb-1"></i>
+                         <div class="flex flex-row gap-x-3 pb-1">
+                              <i id="light-dark-mode" class="fad fa-sun fa-lg fxxa-md text-yellow-500 cursor-pointer hover:text-slate-600"></i>
+                         </div>
                          <!-- Version -->
-                         <span id="version" class="copyright text-slate-600 font-medium text-xs">version 0.0.125</span>
+                         <span id="version" class="copyright text-slate-600 font-medium text-xs">version 0.0.165</span>
                          <!-- Copyright -->
                          <span class="copyright text-slate-500 font-light text-xs">David Ranich &copy; <span id="copyright-year"></span></span>
-                         
                     </div>
                </div>
 
@@ -91,7 +90,7 @@
 
                               <!-- NFT Price -->
                               <div id="nft-price" class="cursor-pointer">
-                                   <i class="fab fa-ethereum text-violet-500"></i> <span id="nft-actual-price" class="text-sm dark:text-neutral-400">6.510</span>
+                                   <i class="fab fa-ethereum text-violet-500"></i> <span id="nft-actual-price" class="text-sm dark:text-neutral-400">8.619</span>
                               </div>
                          </div>
                     </div>
@@ -111,13 +110,13 @@
 
                <!-- Projects Content -->
                <div id="projects-content" class="pl-4 hidden text-slate-500">
-                    <div id="homepi-top" class="flex justify-between items-center">
+                    <div id="homenode-top" class="flex justify-between items-center">
 
-                         <!-- homePi Title -->
-                         <span id="homepi-title" class="text-slate-700 font-bold text-2xl lg:text-6xl drop-shadow-md transition duration-600 ease-in-out">homePi</span>
+                         <!-- homeNODE Title -->
+                         <span id="homenode-title" class="text-slate-700 font-bold text-2xl lg:text-6xl drop-shadow-md transition duration-600 ease-in-out">homeNODE</span>
 
                          <!-- Back to Home -->
-                         <span id="go-back-home-projects"><i class="fas fa-home fa-lg text-slate-600 hover:text-slate-500 drop-shadow-lg cursor-pointer pr-3"></i></span>
+                         <span class="go-home"><i class="fas fa-home fa-lg text-slate-600 hover:text-slate-500 drop-shadow-lg cursor-pointer pr-3"></i></span>
                     </div>
                     <hr class="border-slate-500 dark:border-neutral-900">
 
@@ -128,7 +127,7 @@
                     <br>
                     <hr class="border-slate-500 dark:border-neutral-900">
                     <br>
-                    <span class="text-xs lg:text-base font-light">The following systems will be included with homePi:</span>
+                    <span class="text-xs lg:text-base font-light">The following systems will be included with homeNODE:</span>
                     <br><br>
                     <ul class="list-disc pl-7 text-xs lg:text-base font-light">
                          <li>Automatic Door unlock/lock w/ RFID</li>
@@ -140,11 +139,11 @@
                          <li>Manage Planned Tasks</li>
                     </ul>
                     <br>
-                    <span class="text-xs italic font-light">(Last Updated: 2022-05-01)</span>
+                    <span class="text-xs italic font-light">(Last Updated: 2022-06-23)</span>
                     <p class="text-xs lg:text-base font-light pt-2 hidden"></p>
                     <div id="images-block" class="flex flex-col justify-between pt-8 gap-y-5 max-h-full max-w-full">
-                         <a href="../img/homePi-screen-1.png" target="_blank"><img class="drop-shadow-md w-full rounded-md" src="../img/homePi-screen-1.png"></a><span class="self-center text-xs lg:text-sm">(click to enlarge)</span>
-                         <a href="../img/homePi-screen-2.png" target="_blank"><img class="drop-shadow-md w-full rounded-md" src="../img/homePi-screen-2.png"></a><span class="self-center text-xs lg:text-sm">(click to enlarge)</span>
+                         <a href="../img/homeNODE-screen-1.png" target="_blank"><img class="drop-shadow-md w-full rounded-md" src="../img/homeNODE-screen-1.png"></a><span class="self-center text-xs lg:text-sm">(click to enlarge)</span>
+                         <a href="../img/homeNODE-screen-2.png" target="_blank"><img class="drop-shadow-md w-full rounded-md" src="../img/homeNODE-screen-2.png"></a><span class="self-center text-xs lg:text-sm">(click to enlarge)</span>
                     </div>
                </div>
 
@@ -156,7 +155,7 @@
                          <span id="about-title" class="text-slate-700 font-bold text-2xl lg:text-6xl drop-shadow-md transition duration-600 ease-in-out">About</span>
 
                          <!-- Back to Home -->
-                         <span id="go-back-home-about"><i class="fas fa-home fa-lg text-slate-600 hover:text-slate-500 drop-shadow-lg cursor-pointer pr-3"></i></span>
+                         <span class="go-home"><i class="fas fa-home fa-lg text-slate-600 hover:text-slate-500 drop-shadow-lg cursor-pointer pr-3"></i></span>
                     </div>
                     <hr class="border-slate-500 dark:border-neutral-900">
 
@@ -176,8 +175,7 @@
                     </div>
                </div>
           </div>
-          
      </main>
-     <script src="../js/main.js"></script>
+     <script src="../js/super-sophisticated-code.js"></script>
 </body>
 </html>

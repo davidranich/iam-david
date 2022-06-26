@@ -23,8 +23,8 @@ const HomePage = () => {
      document.getElementById("about-content").classList.add('hidden');
 };
 
-const home_button_projects = document.getElementById("go-back-home-projects");
-home_button_projects.addEventListener("click", HomePage);
-
-const home_button_about = document.getElementById("go-back-home-about");
-home_button_about.addEventListener("click", HomePage);
+// go back to home button
+const home_button = document.querySelectorAll(".go-home");
+home_button.forEach(button => {
+     button.addEventListener("click", HomePage);
+});

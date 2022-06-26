@@ -1,4 +1,7 @@
 import tippy from 'tippy.js';
+import { data, SetNFTPrice} from '../scripts/price-nft';
+
+let nft_usd_price = SetNFTPrice(data.price);
 
 tippy('#nft-price', {
      content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal"></span>',
@@ -8,7 +11,7 @@ tippy('#nft-price', {
      placement: 'right',
      animation: 'shift-away',
      onShow(instance) {
-          instance.setContent('<span class="hidden lg:block opacity-90 terminal text-xs font-normal">' + nft_price_tooltip + '</span>');
+          instance.setContent('<span class="hidden lg:block opacity-90 terminal text-xs font-normal">' + nft_usd_price + '</span>');
      }
 });
 
@@ -25,7 +28,16 @@ tippy('#light-dark-mode', {
      content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">dark/light</span>',
      allowHTML: true,
      delay: [300, 50],
-     offset: [0, 4],
+     offset: [0, 14],
+     placement: 'left-end',
+     animation: 'shift-away'
+});
+
+tippy('#flappy-game-button', {
+     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">let\'s game!</span>',
+     allowHTML: true,
+     delay: [300, 50],
+     offset: [5, 14],
      placement: 'right-end',
      animation: 'shift-away'
 });
