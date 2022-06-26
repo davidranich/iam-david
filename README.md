@@ -20,7 +20,6 @@ As [Gandhi] once said:
 - [webpack](https://webpack.js.org/)
 - [babel](https://babeljs.io/)
 - [font awesome](https://fontawesome.com/)
-- [phaser](https://phaser.io/)
 - [node.js](https://nodejs.org/en/)
 
 ## Installation
