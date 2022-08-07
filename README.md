@@ -1,13 +1,11 @@
 # 💻 iam-david
 
-here is the code for [my website](https://iam.davidranich.com). it's not much, but it's an honest day's work.
+here is the code for [my website](https://davidranich.com). it's not much, but it's an honest day's work.
 
 ## What's Included
 
-- ethereum price scraping script
+- ethereum price scraping script (runs every 60 seconds)
 - easter eggs
-
-As [Gandhi] once said:
 
 > Fancy algorithms are slow when n is small, and n is usually small.
 
