@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 (async () => {
-     const browser = await puppeteer.launch({ headless: true });
+     const browser = await puppeteer.launch({ headless: true, args: ['--use-gl=egl'] });
      const page = await browser.newPage();
      let usd_value;
      await page.goto('https://coinmarketcap.com/currencies/ethereum/');

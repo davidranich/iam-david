@@ -760,7 +760,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tipp
 /***/ ((module) => {
 
 "use strict";
-eval("module.exports = JSON.parse('{\"price\":\"$1,703.52\"}');\n\n//# sourceURL=webpack://iam-david/./public/misc/eth-price.json?");
+eval("module.exports = JSON.parse('{\"price\":\"$1,711.90\"}');\n\n//# sourceURL=webpack://iam-david/./public/misc/eth-price.json?");
 
 /***/ })
 
