@@ -1,11 +1,6 @@
-import * as data from '../../lib/files/eth-price.json';
-
-// fetch('../../lib/files/eth-price.json')
-//      .then(response => response.json())
-//      .then(data => SetNFTPrice(data.price));
+import * as data from '../../../public/misc/eth-price.json';
 
 const SetNFTPrice = (price) => {
-     let nft_price_tooltip;
      price = price.replace("$", "");
      price = price.replace(",", "");
      
@@ -13,10 +8,13 @@ const SetNFTPrice = (price) => {
      let final = ((parseFloat(price) * parseFloat(nft_eth)).toFixed(2));
      final = "$" + final;
 
-     // add comma(s) when necessary
-     return nft_price_tooltip = final.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+     // add comma(s) when/where necessary
+     final = final.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+     return final;
 };
 
-let nft_usd_price = SetNFTPrice(data.price);
+const nft_usd_price = data.price;
+const nft_eth_conversion = SetNFTPrice(nft_usd_price);
 
-export { data, SetNFTPrice };
+export { nft_eth_conversion };

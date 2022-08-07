@@ -716,7 +716,7 @@ eval("var favorite_elm = document.getElementById(\"favorite\");\nvar favorite_co
   \***************************************/
 /***/ (() => {
 
-eval("var ProjectsPage = function ProjectsPage() {\n  document.getElementById(\"david-info-side\").classList.add(\"hidden\");\n  document.getElementById(\"crypto-card\").classList.add(\"hidden\");\n  document.getElementById(\"projects-content\").classList.remove('hidden');\n};\n\nvar projects_button = document.getElementById(\"projects-button\");\nprojects_button.addEventListener(\"click\", ProjectsPage);\n\nvar AboutPage = function AboutPage() {\n  document.getElementById(\"david-info-side\").classList.add(\"hidden\");\n  document.getElementById(\"crypto-card\").classList.add(\"hidden\");\n  document.getElementById(\"about-content\").classList.remove('hidden');\n};\n\nvar about_button = document.getElementById(\"about-button\");\nabout_button.addEventListener(\"click\", AboutPage);\n\nvar HomePage = function HomePage() {\n  document.getElementById(\"david-info-side\").classList.remove(\"hidden\");\n  document.getElementById(\"crypto-card\").classList.remove(\"hidden\");\n  document.getElementById(\"projects-content\").classList.add('hidden');\n  document.getElementById(\"about-content\").classList.add('hidden');\n}; // go back to home button\n\n\nvar home_button = document.querySelectorAll(\".go-home\");\nhome_button.forEach(function (button) {\n  button.addEventListener(\"click\", HomePage);\n});\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/page-change.js?");
+eval("var AboutPage = function AboutPage() {\n  document.getElementById(\"david-info-side\").classList.add(\"hidden\");\n  document.getElementById(\"crypto-card\").classList.add(\"hidden\");\n  document.getElementById(\"about-content\").classList.remove('hidden');\n};\n\nvar about_button = document.getElementById(\"about-button\");\nabout_button.addEventListener(\"click\", AboutPage);\n\nvar HomePage = function HomePage() {\n  document.getElementById(\"david-info-side\").classList.remove(\"hidden\");\n  document.getElementById(\"crypto-card\").classList.remove(\"hidden\");\n  document.getElementById(\"about-content\").classList.add('hidden');\n}; // go back to home button\n\n\nvar home_button = document.querySelectorAll(\".go-home\");\nhome_button.forEach(function (button) {\n  button.addEventListener(\"click\", HomePage);\n});\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/page-change.js?");
 
 /***/ }),
 
@@ -727,7 +727,7 @@ eval("var ProjectsPage = function ProjectsPage() {\n  document.getElementById(\"
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("var _lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0___namespace_cache;\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SetNFTPrice\": () => (/* binding */ SetNFTPrice),\n/* harmony export */   \"data\": () => (/* reexport fake namespace object from non-harmony */ _lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0___namespace_cache || (_lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0___namespace_cache = __webpack_require__.t(_lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0__, 2)))\n/* harmony export */ });\n/* harmony import */ var _lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lib/files/eth-price.json */ \"./src/lib/files/eth-price.json\");\n // fetch('../../lib/files/eth-price.json')\n//      .then(response => response.json())\n//      .then(data => SetNFTPrice(data.price));\n\nvar SetNFTPrice = function SetNFTPrice(price) {\n  var nft_price_tooltip;\n  price = price.replace(\"$\", \"\");\n  price = price.replace(\",\", \"\");\n  var nft_eth = \"8.619\";\n\n  var _final = (parseFloat(price) * parseFloat(nft_eth)).toFixed(2);\n\n  _final = \"$\" + _final; // add comma(s) when necessary\n\n  return nft_price_tooltip = _final.replace(/\\B(?=(\\d{3})+(?!\\d))/g, ',');\n};\n\nvar nft_usd_price = SetNFTPrice(_lib_files_eth_price_json__WEBPACK_IMPORTED_MODULE_0__.price);\n\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/price-nft.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"nft_eth_conversion\": () => (/* binding */ nft_eth_conversion)\n/* harmony export */ });\n/* harmony import */ var _public_misc_eth_price_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/misc/eth-price.json */ \"./public/misc/eth-price.json\");\n\n\nvar SetNFTPrice = function SetNFTPrice(price) {\n  price = price.replace(\"$\", \"\");\n  price = price.replace(\",\", \"\");\n  var nft_eth = \"8.619\";\n\n  var _final = (parseFloat(price) * parseFloat(nft_eth)).toFixed(2);\n\n  _final = \"$\" + _final; // add comma(s) when/where necessary\n\n  _final = _final.replace(/\\B(?=(\\d{3})+(?!\\d))/g, ',');\n  return _final;\n};\n\nvar nft_usd_price = _public_misc_eth_price_json__WEBPACK_IMPORTED_MODULE_0__.price;\nvar nft_eth_conversion = SetNFTPrice(nft_usd_price);\n\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/price-nft.js?");
 
 /***/ }),
 
@@ -749,18 +749,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tippy.js */ \"./node_modules/tippy.js/dist/tippy.esm.js\");\n/* harmony import */ var _scripts_price_nft__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scripts/price-nft */ \"./src/js/scripts/price-nft.js\");\n\n\nvar nft_usd_price = (0,_scripts_price_nft__WEBPACK_IMPORTED_MODULE_0__.SetNFTPrice)(_scripts_price_nft__WEBPACK_IMPORTED_MODULE_0__.data.price);\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#nft-price', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\"></span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 12],\n  placement: 'right',\n  animation: 'shift-away',\n  onShow: function onShow(instance) {\n    instance.setContent('<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">' + nft_usd_price + '</span>');\n  }\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#favorite', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">favorite</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 6],\n  placement: 'bottom-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#light-dark-mode', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">dark/light</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 14],\n  placement: 'left-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#flappy-game-button', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">let\\'s game!</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [5, 14],\n  placement: 'right-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#about-button', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">about me</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 4],\n  placement: 'left-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#crypto-nft', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">click me</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 4],\n  placement: 'right',\n  animation: 'shift-away'\n});\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/tooltips.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tippy.js */ \"./node_modules/tippy.js/dist/tippy.esm.js\");\n/* harmony import */ var _scripts_price_nft__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scripts/price-nft */ \"./src/js/scripts/price-nft.js\");\n\n\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#nft-price', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\"></span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 12],\n  placement: 'right',\n  animation: 'shift-away',\n  onShow: function onShow(instance) {\n    instance.setContent('<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">' + _scripts_price_nft__WEBPACK_IMPORTED_MODULE_0__.nft_eth_conversion + '</span>');\n  }\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#crypto-info', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">NFT\\'s are pointless</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 6],\n  placement: 'bottom-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#favorite', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">favorite</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 6],\n  placement: 'bottom-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#light-dark-mode', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">dark/light</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 14],\n  placement: 'left-end',\n  animation: 'shift-away'\n});\n(0,tippy_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('#crypto-nft', {\n  content: '<span class=\"hidden lg:block opacity-90 terminal text-xs font-normal\">click me</span>',\n  allowHTML: true,\n  delay: [300, 50],\n  offset: [0, 4],\n  placement: 'right',\n  animation: 'shift-away'\n});\n\n//# sourceURL=webpack://iam-david/./src/js/scripts/tooltips.js?");
 
 /***/ }),
 
-/***/ "./src/lib/files/eth-price.json":
-/*!**************************************!*\
-  !*** ./src/lib/files/eth-price.json ***!
-  \**************************************/
+/***/ "./public/misc/eth-price.json":
+/*!************************************!*\
+  !*** ./public/misc/eth-price.json ***!
+  \************************************/
 /***/ ((module) => {
 
 "use strict";
-eval("module.exports = JSON.parse('{\"price\":\"$1,194.43\"}');\n\n//# sourceURL=webpack://iam-david/./src/lib/files/eth-price.json?");
+eval("module.exports = JSON.parse('{\"price\":\"$1,703.52\"}');\n\n//# sourceURL=webpack://iam-david/./public/misc/eth-price.json?");
 
 /***/ })
 
@@ -800,36 +800,6 @@ eval("module.exports = JSON.parse('{\"price\":\"$1,194.43\"}');\n\n//# sourceURL
 /******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/create fake namespace object */
-/******/ 	(() => {
-/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
-/******/ 		var leafPrototypes;
-/******/ 		// create a fake namespace object
-/******/ 		// mode & 1: value is a module id, require it
-/******/ 		// mode & 2: merge all properties of value into the ns
-/******/ 		// mode & 4: return value when already ns object
-/******/ 		// mode & 16: return value when it's Promise-like
-/******/ 		// mode & 8|1: behave like require
-/******/ 		__webpack_require__.t = function(value, mode) {
-/******/ 			if(mode & 1) value = this(value);
-/******/ 			if(mode & 8) return value;
-/******/ 			if(typeof value === 'object' && value) {
-/******/ 				if((mode & 4) && value.__esModule) return value;
-/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
-/******/ 			}
-/******/ 			var ns = Object.create(null);
-/******/ 			__webpack_require__.r(ns);
-/******/ 			var def = {};
-/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
-/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
-/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
-/******/ 			}
-/******/ 			def['default'] = () => (value);
-/******/ 			__webpack_require__.d(ns, def);
-/******/ 			return ns;
 /******/ 		};
 /******/ 	})();
 /******/ 	

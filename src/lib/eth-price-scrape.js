@@ -1,29 +1,26 @@
-// install puppeteer
-// scrape some crypto website for ethereum price
-// save to json file
-
-// in js file, fetch json value 
-// find formula to convert ethereum to usd
-// set tooltip value
-
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 (async () => {
      const browser = await puppeteer.launch({ headless: true });
      const page = await browser.newPage();
+     let usd_value;
      await page.goto('https://coinmarketcap.com/currencies/ethereum/');
-     const html = await page.$eval('.priceValue>span', (e) => e.innerHTML);
+
+     try {
+          usd_value = await page.$eval('.priceValue>span', element => element.innerHTML);
+     } catch (error) {
+          console.error("Element wasn't found, closing browser session.");
+          return await browser.close();
+     }
      
      const content = {
-          "price": html
+          "price": usd_value
      };
 
-     fs.writeFile('src/lib/files/eth-price.json', JSON.stringify(content), err => {
-          if (err) {
-               console.error(err);
-          }
-          console.log('Success!');
+     fs.writeFile('public/misc/eth-price.json', JSON.stringify(content), error => {
+          if (error) { return console.error(error); }
+          return console.log('Price scraped and saved as eth-price.json');
      });  
      await browser.close();
 })();
