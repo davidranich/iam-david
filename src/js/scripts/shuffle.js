@@ -6,7 +6,6 @@ const shuffle = (array) => {
 
      // While there remain elements to shuffle...
      while (m) {
-
           // Pick a remaining element...
           i = Math.floor(Math.random() * m--);
 

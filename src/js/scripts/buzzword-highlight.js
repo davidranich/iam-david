@@ -5,6 +5,7 @@ import { shuffle } from "./shuffle";
 // ===================================
 let word_index = 0;
 let window_closed = 0;
+
 const FlashBuzz = (word_arr) => {
      const buzz_elm = document.getElementById("buzzwords");
 
@@ -60,21 +61,32 @@ const FlashBuzz = (word_arr) => {
 };
 
 let buzzwords = [
-     'automating tasks',
+     'automation',
      'software development',
-     'engineer',
-     'server management',
+     'full stack development',
+     'front end development',
+     'back end development',
+     'data sanitizing',
+     'mobile development',
+     'cloud computing',
+     'troubleshooting',
+     'hardware',
+     'linux && macos',
+     'command line',
+     'shell scripting',
      'problem solving',
      'tinkering',
      'data scraping',
      'data parsing',
      'networking',
-     'query writer',
-     'database management'
+     'query writing',
+     'relational databases',
+     'nosql databases',
+     'encryption',
+     'api development'
 ];
 
 // scramble array items
 buzzwords = shuffle(buzzwords);
 
 FlashBuzz(buzzwords);
-
