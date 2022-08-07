@@ -7,8 +7,6 @@ here is the code for [my website](https://davidranich.com). it's not much, but i
 - ethereum price scraping script (runs every 60 seconds)
 - easter eggs
 
-> Fancy algorithms are slow when n is small, and n is usually small.
-
 ## Tech Stack
 
 - [tailwindcss](https://tailwindcss.com/)
