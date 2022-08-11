@@ -18,7 +18,7 @@ const fs = require('fs');
           "price": usd_value
      };
 
-     fs.writeFile('public/misc/eth-price.json', JSON.stringify(content), error => {
+     fs.writeFile('../../public/misc/eth-price.json', JSON.stringify(content), error => {
           if (error) { return console.error(error); }
           return console.log('Price scraped and saved as eth-price.json');
      });  
