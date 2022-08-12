@@ -14,11 +14,9 @@
 </head>
 <body>
      <main id="heres-the-goods" class="pbx-8 lg:pbx-0">
-
           <!-- Card -->
           <div id="main-card" class="flex flex-col-reverse lg:flex-row justify-between lg:w-8/12 2xl:w-full md:max-w-sm lg:max-w-4xl px-8 py-8 mx-auto mt-10 lg:mt-16 bg-gray-100 dark:bg-neutral-800 shadow-sm rounded-md 2xl:mt-52">
                <div id="david-info-side" class="my-6 lg:plx-4 ptx-2 lg:ptx-0">
-
                     <!-- Title -->
                     <a href="/"><span id="title" class="text-slate-700 font-bold text-5xl lg:text-7xl md:text-5xl drop-shadow-md transxition duxration-600 eaxse-in-out hover:text-slate-500">David Ranich</span></a>
 
@@ -37,7 +35,7 @@
 
                     <!-- Navigation -->
                     <hr class="border-slate-500 dark:border-neutral-900">
-                    <div id="navigation" class="flex flexx-row md:flexx-col flex-wrap lg:py-1 lg:pl-0 justify-around gap-x-2.5 lg:justify-between">
+                    <nav id="navigation" class="flex flexx-row md:flexx-col flex-wrap lg:py-1 lg:pl-0 justify-around gap-x-2.5 lg:justify-between">
                          <!-- Github -->
                          <a id="github-button" href="https://github.com/davidranich" target="_blank"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fab fa-github"></i>&nbsp;&nbsp;github</button></a>
                          
@@ -49,10 +47,10 @@
 
                          <!-- LinkedIn -->
                          <a id="linkedin-button" href="https://www.linkedin.com/in/david-ranich/" target="_blank"><button type="button" class="py-2 px-4 flex items-center w-full text-center text-sm lg:text-base transition duration-300 ease-in-out text-slate-700 dark:text-slate-600 dark:hover:text-slate-400 hover:text-slate-500 font-normal"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;connect</button></a>
-                    </div>
+                    </nav>
 
                     <!-- Copyright Section -->
-                    <div id="copyright" class="flex flex-col py-1 gap-x-3 justify-center items-center">
+                    <section id="copyright" class="flex flex-col py-1 gap-x-3 justify-center items-center">
                          <!-- Darkmode / Lightmode -->
                          <div class="flex flex-row gap-x-3 pb-1">
                               <i id="light-dark-mode" class="fad fa-sun fa-lg fxxa-md text-yellow-500 cursor-pointer hover:text-slate-600"></i>
@@ -61,14 +59,13 @@
                          <span id="version" class="copyright text-slate-600 font-medium text-xs">version 0.0.179</span>
                          <!-- Copyright -->
                          <span class="copyright text-slate-500 font-light text-xs">David Ranich &copy; <span id="copyright-year"></span></span>
-                    </div>
+                    </section>
                </div>
 
                <!-- NFT Card -->
                <div id="crypto-card" class="h-full lg:max-w-4xl md:max-w-sm rounded-b-lg shadow-lg transition duration-700 ease-in-out hover:shadow-none blxur-sm">
-
                     <!-- NFT Picture -->
-                    <img id="crypto-nft" src="../img/david-pixel-3.png" class="rounded-t-lg w-full md:max-w-sm lg:max-w-4xl cursor-pointer"> 
+                    <img id="crypto-nft" src="../img/david-pixel-3.png" class="rounded-t-lg w-full md:max-w-sm lg:max-w-4xl cursor-pointer" alt="A pixelated version of myself, to look like an NFT (non-fungible token)"> 
 
                     <!-- NFT Information -->
                     <div id="crypto-details" class="pt-1 pl-2 pr-2 pb-2 bg-neutral-50 border border-l-slate-400 border-r-slate-400 dark:bg-neutral-700 dark:border-t-neutral-700 dark:border-l-neutral-700 dark:border-r-neutral-700 dark:border-b-neutral-800">
@@ -113,7 +110,7 @@
                </div>
 
                <!-- About Content -->
-               <div id="about-content" class="pl-4 hidden text-slate-500">
+               <article id="about-content" class="pl-4 hidden text-slate-500">
                     <div id="about-top" class="flex justify-between items-center">
 
                          <!-- About Title -->
@@ -127,7 +124,7 @@
                     <!-- About Text -->
                     <div class="flex flex-col justify-between pt-3">
                          <div class="about-pic">
-                              <img class="lg:w-9/12 drop-shadow-lg rounded m-auto" src="../img/david.jpg"></a>
+                              <img class="lg:w-9/12 drop-shadow-lg rounded m-auto" src="../img/david.jpg" alt="A picture of myself sitting at a desk, with a whiteboard with notes on it."></a>
                          </div>
                          <div id="about-text" class="pt-3">
                               <p class="text-sm lg:text-base font-light pt-2">
@@ -138,7 +135,7 @@
                               </p>
                          </div>
                     </div>
-               </div>
+               </article>
           </div>
      </main>
      <script src="../js/super-sophisticated-code.js"></script>

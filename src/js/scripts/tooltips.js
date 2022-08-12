@@ -14,7 +14,7 @@ tippy('#nft-price', {
 });
 
 tippy('#crypto-info', {
-     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">NFT\'s are pointless</span>',
+     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">NFTs are pointless</span>',
      allowHTML: true,
      delay: [300, 50],
      offset: [0, 6],
