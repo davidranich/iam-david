@@ -1,4 +1,4 @@
-import * as data from '../../../public/misc/eth-price.json';
+import * as data from '/public/misc/eth-price.json';
 
 const SetNFTPrice = (price) => {
      price = price.replace("$", "");
