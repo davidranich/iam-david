@@ -13,12 +13,12 @@ tippy('#nft-price', {
      }
 });
 
-tippy('#crypto-info', {
-     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">NFTs are pointless</span>',
+tippy('#my-website-code', {
+     content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal">website code</span>',
      allowHTML: true,
      delay: [300, 50],
      offset: [0, 6],
-     placement: 'bottom-end',
+     placement: 'left',
      animation: 'shift-away'
 });
 
