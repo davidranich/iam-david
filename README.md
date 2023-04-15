@@ -4,13 +4,13 @@ here is the code for [my website](https://davidranich.com). it's not much, but i
 
 ## Tech Stack
 
-- [tailwindcss](https://tailwindcss.com/)
-- [express](https://expressjs.com/)
-- [puppeteer](https://pptr.dev/)
-- [webpack](https://webpack.js.org/)
 - [babel](https://babeljs.io/)
+- [express](https://expressjs.com/)
 - [font awesome](https://fontawesome.com/)
 - [node.js](https://nodejs.org/en/)
+- [puppeteer](https://pptr.dev/)
+- [tailwindcss](https://tailwindcss.com/)
+- [webpack](https://webpack.js.org/)
 
 ## Installation
 
