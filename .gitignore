@@ -129,5 +129,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Build file
+public/js/super-sophisticated-code.js
+
 # The eth-price JSON file
 public/misc/eth-price.json
