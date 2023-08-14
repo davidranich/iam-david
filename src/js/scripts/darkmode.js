@@ -32,7 +32,7 @@ const DarkModeToggle = () => {
           case '0':
                light_dark_elm.classList.remove('fa-moon-stars');
                light_dark_elm.classList.add('fa-sun');
-               localStorage.setItem('dark-mode', '0');
+               localStorage.setItem('dark-mode', '1');
                document.documentElement.classList.remove('dark');
                document.body.classList.remove('darkmode-bg');
                document.body.classList.add('lightmode-bg');
@@ -40,7 +40,7 @@ const DarkModeToggle = () => {
           case '1':
                light_dark_elm.classList.add('fa-moon-stars');
                light_dark_elm.classList.remove('fa-sun');
-               localStorage.setItem('dark-mode', '1');
+               localStorage.setItem('dark-mode', '0');
                document.documentElement.classList.add('dark');
                document.body.classList.add('darkmode-bg');
                document.body.classList.remove('lightmode-bg');

@@ -17,4 +17,8 @@ const SetNFTPrice = (price) => {
 const nft_usd_price = data.price;
 const nft_eth_conversion = SetNFTPrice(nft_usd_price);
 
+function average(score1, score2, score3) {
+     return (score1 + score2 + score3) / 3;
+}
+
 export { nft_eth_conversion };
