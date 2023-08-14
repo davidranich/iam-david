@@ -1,4 +1,4 @@
-console.log("🎶 It's mine, it's mine, it's mine. Whose world is this? The world is yours, the world is yours. 🎶 — Nas");
+console.log("🎶 It's mine, it's mine, it's mine. Whose world is this? The world is yours, the world is yours. 🎶");
 
 // =======================
 // Age & Copyright Year
