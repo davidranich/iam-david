@@ -28,7 +28,7 @@ const DarkModeToggle = () => {
      const darkmode = localStorage.getItem('dark-mode');
 
      switch (darkmode) {
-          case '1':
+          case '0':
                light_dark_elm.classList.add('fa-moon-stars');
                light_dark_elm.classList.remove('fa-sun');
                localStorage.setItem('dark-mode', '1');
@@ -36,7 +36,7 @@ const DarkModeToggle = () => {
                document.body.classList.add('darkmode-bg');
                document.body.classList.remove('lightmode-bg');
                break;
-          case '0':
+          case '1':
                light_dark_elm.classList.remove('fa-moon-stars');
                light_dark_elm.classList.add('fa-sun');
                localStorage.setItem('dark-mode', '0');
