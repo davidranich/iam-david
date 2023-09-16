@@ -1,5 +1,5 @@
 import tippy from 'tippy.js';
-import { nft_eth_conversion } from '../scripts/price-nft';
+import { dollar_value_formatted } from '../scripts/price-nft';
 
 tippy('#nft-price', {
      content: '<span class="hidden lg:block opacity-90 terminal text-xs font-normal"></span>',
@@ -9,7 +9,7 @@ tippy('#nft-price', {
      placement: 'right',
      animation: 'shift-away',
      onShow(instance) {
-          instance.setContent('<span class="hidden lg:block opacity-90 terminal text-xs font-normal">' + nft_eth_conversion + '</span>');
+          instance.setContent('<span class="hidden lg:block opacity-90 terminal text-xs font-normal">' + dollar_value_formatted + '</span>');
      }
 });
 
