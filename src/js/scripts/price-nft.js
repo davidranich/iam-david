@@ -1,20 +1,7 @@
-import * as data from '/public/misc/eth-price.json';
+import { price } from '/public/misc/eth-price.json';
 
-const SetNFTPrice = (price) => {
-     price = price.replace("$", "");
-     price = price.replace(",", "");
-     
-     const nft_eth = "8.619";
-     let final = ((parseFloat(price) * parseFloat(nft_eth)).toFixed(2));
-     final = "$" + final;
+// get current dollar value of ethereum, multiply by 'nft' value, and convert to dollar format
+const nft_eth_value = 8.619;
+const dollar_value_formatted = (parseFloat(price) * parseFloat(nft_eth_value)).toLocaleString("en-US", { style: "currency", currency: "USD" });
 
-     // add comma(s) when/where necessary
-     final = final.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-
-     return final;
-};
-
-const nft_usd_price = data.price;
-const nft_eth_conversion = SetNFTPrice(nft_usd_price);
-
-export { nft_eth_conversion };
+export { dollar_value_formatted } ;
