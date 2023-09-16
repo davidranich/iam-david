@@ -6,12 +6,6 @@ console.log("🎶 It's mine, it's mine, it's mine. Whose world is this? The worl
 import './scripts/age-copy';
 // =======================
 
-// ===============
-// NFT Price
-// ===============
-import './scripts/price-nft';
-// ===============
-
 // ============================
 // Tool Tips Functionality
 // ============================
