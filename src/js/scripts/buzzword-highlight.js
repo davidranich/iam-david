@@ -83,7 +83,11 @@ let buzzwords = [
      'relational databases',
      'nosql databases',
      'encryption',
-     'api development'
+     'api development',
+     'aws',
+     'docker',
+     'continuous integration',
+     'continuous delivery'
 ];
 
 // scramble array items
