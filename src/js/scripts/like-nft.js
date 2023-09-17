@@ -41,10 +41,4 @@ function toggle(value) {
 favorite_elm.addEventListener("click", () => {
      let like = parseInt(localStorage.getItem('nft-like'));
      toggle(like);
-
-     // if (!like) {
-     //      toggle(1);
-     // } else {
-     //      toggle(0);
-     // }
 });
