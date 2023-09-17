@@ -13,7 +13,7 @@ const FlashBuzz = (word_arr) => {
      if (window_closed > 0) { return; }
 
      // once array is done, reset index
-     if (word_index == word_arr.length) {
+     if (word_index === word_arr.length) {
           word_index = 0;
      }
 
@@ -84,8 +84,8 @@ let buzzwords = [
      'nosql databases',
      'encryption',
      'api development',
-     'aws',
-     'docker',
+     'amazon web services',
+     'container applications',
      'continuous integration',
      'continuous delivery'
 ];
