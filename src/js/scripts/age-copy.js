@@ -1,4 +1,4 @@
-const current_year = new Date().getFullYear();
+let current_year = new Date().getFullYear();
 const birth_year = 1993;
 let age = (current_year - birth_year); // simple math to determine age for 'about' page
 
