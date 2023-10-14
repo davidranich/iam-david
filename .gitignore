@@ -136,4 +136,4 @@ public/js/super-sophisticated-code.js
 public/misc/eth-price.json
 
 # Remove this crap
-.DS_Store
+**/.DS_Store
