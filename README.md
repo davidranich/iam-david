@@ -8,7 +8,6 @@ here is the code for [my website](https://davidranich.com). it's not much, but i
 - [express](https://expressjs.com/)
 - [font awesome](https://fontawesome.com/)
 - [node.js](https://nodejs.org/en/)
-- [puppeteer](https://pptr.dev/)
 - [tailwindcss](https://tailwindcss.com/)
 - [webpack](https://webpack.js.org/)
 
