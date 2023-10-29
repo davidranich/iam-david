@@ -19,9 +19,9 @@ import './scripts/page-change.js';
 // =======================
 
 // ===================================
-// Buzzword Highlight Functionality
+// Terminal Buzzwords Functionality
 // ===================================
-import './scripts/buzzword-highlight';
+import './scripts/terminal-buzzwords';
 // ===================================
 
 // ============================
