@@ -8,8 +8,6 @@ let word_index = 0;
 let window_closed = 0;
 
 const terminal_buzzwords_elm = document.getElementById("buzzwords");
-const cursor_start_elm = document.getElementById("text-cursor-blink-start");
-const cursor_end_elm = document.getElementById("text-cursor-blink-end");
 
 const flashBuzzword = (word_arr) => {
      // if window was closed, kill function
@@ -23,11 +21,7 @@ const flashBuzzword = (word_arr) => {
           terminal_buzzwords_elm.innerHTML = word_arr[word_index];
 
           // unhides buzzwords element to display random word
-          // hides starting flashing text cursor
-          // unhides ending flashing text cursor
           terminal_buzzwords_elm.classList.remove('hidden');
-          //cursor_start_elm.classList.add('hidden');
-          //cursor_end_elm.classList.remove('hidden');
           setTimeout(() => {
                // we've shown the text for long enough, let's add to the count & re-run the function again to show another word
                word_index++;
