@@ -4,7 +4,7 @@ const crypto_nft = document.getElementById('crypto-nft');
 const mac_red_dot = document.getElementById('window-dot-red');
 const mac_amber_dot = document.getElementById('window-dot-amber');
 
-const CloseWindow = () => {
+const closeWindow = () => {
      const mac_window = document.getElementById('mac-window');
      mac_window.classList.remove('rounded-lg');
      mac_window.classList.remove('bg-gray-400');
@@ -13,11 +13,10 @@ const CloseWindow = () => {
      mac_window.classList.add('text-red-700');
      mac_window.classList.add('text-lg');
      mac_window.innerHTML = "How dare you.";
-     window_closed = 1;
 };
 
 let minimized = 0;
-const MinimizeWindow = () => {
+const minimizeWindow = () => {
      const mac_window_bottom = document.getElementById('mac-window-bottom');
 
      if (minimized == 1) {
@@ -31,7 +30,7 @@ const MinimizeWindow = () => {
 };
 
 let title_changed = 0;
-const TitleChange = () => {
+const titleChange = () => {
      const title_elm = document.getElementById('title');
 
      if (title_changed == 1) {
@@ -82,6 +81,6 @@ const TitleChange = () => {
      title_changed = 1;
 };
 
-crypto_nft.addEventListener("click", TitleChange);
-mac_red_dot.addEventListener("click", CloseWindow);
-mac_amber_dot.addEventListener("click", MinimizeWindow);
+crypto_nft.addEventListener("click", titleChange);
+mac_red_dot.addEventListener("click", closeWindow);
+mac_amber_dot.addEventListener("click", minimizeWindow);
