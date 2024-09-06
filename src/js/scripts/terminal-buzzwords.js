@@ -4,15 +4,10 @@
 
 import { shuffle } from "./shuffle";
 
-let word_index = 0;
-let window_closed = 0;
-
 const terminal_buzzwords_elm = document.getElementById("buzzwords");
+let word_index = 0;
 
 const flashBuzzword = (word_arr) => {
-     // if window was closed, kill function
-     if (window_closed > 0) return;
-
      // once array is done, reset index
      if (word_index === word_arr.length) word_index = 0;
 
@@ -60,9 +55,5 @@ let buzzwords = [
      'continuous delivery'
 ];
 
-// scramble array items several times
 buzzwords = shuffle(buzzwords);
-buzzwords = shuffle(buzzwords);
-buzzwords = shuffle(buzzwords);
-
 flashBuzzword(buzzwords);
